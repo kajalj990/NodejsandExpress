@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>ShoppingList</title>
+    </head>
+    <script src="/controller/appController.js"></script>
+    <body>
+        <h1>My Shopping List</h1>
+    <div id="todo-table">
+        <form method="POST" action="/item">
+            <input type="text" name ="item" placeholder="Add new item.." required/>
+            <input type="number" name ="price" placeholder="Add price.." required/>
+            <button type="submit">Add Item</button>
+        </form>
+        <form>
+        <ul>
+            Items-Price
+            <% for(var i=0 ;i<list.length; i++){%>
+                <li><%= list[i].item %>-
+                <%= list[i].price  %>rs</li>
+                <button formaction="/item/{list[i].item}" formmethod="DELETE" type="submit">Delete</button>
+                <button>Update</button>
+            <%}%>
+
+        </ul>
+        </form>
+
+    </div>
+    </body>
+</html>

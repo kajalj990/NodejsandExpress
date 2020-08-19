@@ -1,0 +1,14 @@
+{
+  "name": "assign9",
+  "version": "1.0.0",
+  "description": "{ \"name\":\"Richa\", \"age\":22, \"city\":\"Lonavala\"}",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
